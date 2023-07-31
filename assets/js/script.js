@@ -13,12 +13,14 @@ $(document).ready(function() {
   // Add the 'sticky' class to the navbar when scrolling past its initial position
   $(window).scroll(function() {
     if ($(window).scrollTop() > 200) {
-
-      navbar.addClass("sticky");
-       navbar.slideDown(5000);
+      
+      navbar.slideDown('slow');
+      navbar.css("visibility", "visible");
+      
       
     } else {
-      navbar.removeClass("sticky");
+     
+      navbar.hide();
     }
   });
   //Javascript code for stricky Haider End--------------------------------

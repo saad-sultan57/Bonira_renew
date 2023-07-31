@@ -964,12 +964,19 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   .custom_header{
     width: 100%;
     background: white;
+    visibility: hidden;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
     z-index: 99999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    
   }
+ 
   .custom_header .cus_logo img{
     width: 160px;
   } 
@@ -998,12 +1005,7 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     color: #fcc929;
   }
   
-  .sticky{
-    position: fixed;
-    top: 0;
-    left: 0;
-    
-  }
+
   .custom_header .fa{
     display: none;
     cursor: pointer;
